@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DemoMvc\\DemoMvc.csproj",
+      "projectUniqueName": "D:\\PTPMQL\\DemoMvc\\DemoMvc.csproj",
       "projectName": "DemoMvc",
-      "projectPath": "D:\\DemoMvc\\DemoMvc.csproj",
+      "projectPath": "D:\\PTPMQL\\DemoMvc\\DemoMvc.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\DemoMvc\\obj\\",
+      "outputPath": "D:\\PTPMQL\\DemoMvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
