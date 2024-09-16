@@ -22,6 +22,17 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult demo()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult demo ( string FullName, string address )
+    {
+        string  str0utput ="xin chao" + FullName + address;
+        ViewBag.message = str0utput ;
+        return View ();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
