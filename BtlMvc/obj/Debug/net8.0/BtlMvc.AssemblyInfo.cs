@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BtlMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7bc262e0e079aca9cf57b66e7111ed5f14106cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3c4ae347f14abc7f4c721fa71a7029a5f9b999f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BtlMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BtlMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

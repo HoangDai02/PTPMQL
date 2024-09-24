@@ -6,6 +6,7 @@ namespace BtlMvc.Models
     {
         [Key]
         public string EmployeeID {get;set;}
+        public string FullName {get;set;}
         public string? Adress {get;set;}
 
     }
