@@ -2,39 +2,22 @@
 using DemoMvc.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-{
-    
-}
 #nullable disable
 
 namespace BtlMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240924031635_create_Table_Employee")]
+    partial class create_Table_Employee
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
-
-            modelBuilder.Entity("BtlMvc.Models.Employee", b =>
-                {
-                    b.Property<string>("EmployeeID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Adress")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("EmployeeID");
-
-                    b.ToTable("Employee");
-                });
 
             modelBuilder.Entity("BtlMvc.Models.Student", b =>
                 {
