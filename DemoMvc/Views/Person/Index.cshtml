@@ -1,10 +1,41 @@
-<form asp-action="index">
-<input type = "text" name = "FullName ">
-<input type = "text" name = "Address">
-<input type="submit" value="gui du lieu">    
-</form>
+@model IEnumerable<DemoMVC.Models.Person>
 
+@{
+    ViewData["Title"] = "Index";
+}
 
+<h1>Index</h1>
 
-
-<h1>@ViewBag.thongbao1</h1>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Hoten)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quequan)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hoten)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quequan)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Cancuoccongdan">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Cancuoccongdan">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Cancuoccongdan">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
